@@ -1,0 +1,26 @@
+<table class="hovered">
+    <thead>
+    <tr>
+        <th>Header</th>
+        <th style="width:300px">Description</th>
+
+        <th>Updated Date</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% _.each(shops, function(shop){  %>
+    <tr>
+        <td style="width:200px">><%= shop.get('noteHeader') %></td>
+        <td style="width:800px"><%= shop.get('noteDescription') %></td>
+
+        <td><%= shop.get('updatedDate') %></td>
+        <td>
+            <a id="edit" href='#edit/<%= shop.get('id') %>' class="button">Edit</a>
+
+            <a id="delete" href='#delete/<%= shop.get('id') %>' class="button">Delete</a>
+        </td>
+    </tr>
+    <% }); %>
+    </tbody>
+</table>

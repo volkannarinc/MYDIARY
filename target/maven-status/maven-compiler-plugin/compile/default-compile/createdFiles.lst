@@ -1,0 +1,5 @@
+com\mydiary\notes\dao\DiaryDAO.class
+com\mydiary\notes\resource\DiaryResource.class
+com\mydiary\notes\service\DiaryService.class
+com\mydiary\notes\dao\BaseDAO.class
+com\mydiary\notes\entity\Shop.class
